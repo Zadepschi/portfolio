@@ -19,7 +19,7 @@
   {
       height: 10px;
       width: 10px;
-      background-color: red;
+      background-color: #66FCF1;
       transition: all .15s;
   }
   
@@ -41,11 +41,13 @@
 
   
   #main {
-      background:  url(fon.jpg) no-repeat  center fixed ; 
+      background:  url(fon.jpg) ; 
       font-family: 'Barlow', sans-serif;
 margin:  0;
 height: 100vh;
-
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
   }
   
  .menu1 {
@@ -68,7 +70,7 @@ top: 70px;
     padding: 12px;
     margin: 12px;
     font-size: 27px;
-    filter: drop-shadow(2px 2px 8px  rgb(182, 18, 18));
+    filter: drop-shadow(2px 2px 8px  #66FCF1);
 }
 
 a {
@@ -366,7 +368,7 @@ a {
   .picPng {
   position: absolute;
   z-index: 10;
-  filter: drop-shadow(2px 2px 8px  rgb(182, 18, 18));
+  filter: drop-shadow(2px 2px 8px  #66FCF1);
   width: 400px;
   margin-top: 50px;
   
@@ -385,12 +387,12 @@ a {
   }
 
   .icon {
-   background-color:rgb(182, 18, 18);
+   background-color:#66FCF1;
   border-radius: 100%;
-  padding: 8px;
+  padding: 2px;
   margin: 10px;
-  filter: drop-shadow(1px 1px 2px  rgb(228, 217, 217));
-  width: 25px;
+  filter: drop-shadow( 1px 2px  rgb(228, 217, 217));
+  width: 35px;
   }
   .icon:hover {
   background-color: beige;
@@ -411,6 +413,13 @@ h1 {
 
 
 
+@media all  and (max-width: 950px)  {
+    .picPng {
+        margin-top: 170px;
+        width: 600px;
+   }
+}
+
   
   @media all  and (max-width: 820px) {
     .paragraphMenu{
@@ -419,7 +428,8 @@ h1 {
         font-size: 23px;
     }
     .picPng {
-         margin-top: 70px;
+         margin-top: 120px;
+         width: 500px;
     }
     .sp-container h2 {
         font-size: 53px;
@@ -433,6 +443,12 @@ h1 {
       
   }
 
+  @media screen and (max-width:600px) {
+    .picPng {
+        margin-top: 100px;
+        width: 450px;
+   }
+  }
   
   
   @media screen and (max-width: 540px) {
@@ -445,6 +461,10 @@ h1 {
 }
 .sp-container h2.frame-4 {
     font-size: 40px;
+ }
+ .icon {
+
+    width: 40px;
  }
   }
   
@@ -459,6 +479,7 @@ h1 {
     }
     .picPng {
         margin-top: 100px;
+        width: 300px;
 
    }
    .sp-container h2 {
@@ -481,10 +502,7 @@ h1 {
 }
 
 .icon {
-
-   padding: 8px;
-   margin: 10px;
-   width: 15px;
+   width: 30px;
    }
    .sp-container h2 {
     font-size: 20px;
