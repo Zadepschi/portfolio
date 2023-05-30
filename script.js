@@ -30,3 +30,11 @@ gsap.from(".icon3", {opacity: 0, duration: 2, delay: 9.9})
 gsap.from(".icon4", {opacity: 0, duration: 2, delay: 10.2})
 gsap.from(".menu1", {opacity: 0, duration: 1, delay: 10.2, x: 50 }) 
 gsap.from(".menu2", {opacity: 0, duration: 1, delay: 10.2, y: 200 }) 
+
+
+
+
+
+
+
+

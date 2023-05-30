@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
@@ -48,10 +50,10 @@
 
       <div class="iconLocation">
       <div class="iconList">
-        <a href="https://github.com/Zadepschi" target="_blank" ><img class="icon icon1" src="https://cdn.glitch.global/a48b816f-c946-4892-96e6-da77fa3342cf/github.png?v=1648635556288" alt=""></a>
-        <img class="icon icon2" src="https://cdn.glitch.global/a48b816f-c946-4892-96e6-da77fa3342cf/codepen.png?v=1648635523860" alt="">
-        <a href="https://www.instagram.com/zadepschi/" target="_blank"><img class="icon icon3" src="https://cdn.glitch.global/a48b816f-c946-4892-96e6-da77fa3342cf/insta.png?v=1648635606637" alt=""></a>
-        <img class="icon icon4" src="https://cdn.glitch.global/a48b816f-c946-4892-96e6-da77fa3342cf/in.png?v=1648635575784" alt="">
+        <a href="https://github.com/Zadepschi" target="_blank" ><img class="icon icon1" src="github.png" alt=""></a>
+        <img class="icon icon2" src="codepen.png" alt="">
+        <a href="https://www.instagram.com/zadepschi/" target="_blank"><img class="icon icon3" src="insta.png" alt=""></a>
+        <img class="icon icon4" src="in.png" alt="">
       </div>
     </div>
       
@@ -86,7 +88,90 @@
 
 
 
-
+     <!-- Form Contact me -->
+     <section id="contact">
+      <div class="contactMe">
+          <div class="containerMe">
+              <div class="contactInfo" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000"
+              data-aos-easing="ease-in">
+                  <div>
+                      <h2>Contact info</h2>
+                      <ul class="info">
+                          <li>
+                              <span><ion-icon name="location-outline"></ion-icon></span>
+                              <span><a href="#">Antalya</a></span>
+                          </li>
+                          <li>
+                              <span><ion-icon name="mail-open-outline"></ion-icon></span>
+                              <span><a href="mailto:zadepschi@yahoo.com">zadepschi@yahoo.com</a></span>
+                          </li>
+                          <li>
+                              <span><ion-icon name="call-outline"></ion-icon></span>
+                              <span><a href="tel:+905320556522">+905320556522</a></span>
+                          </li>
+                      </ul>
+                  </div>
+                  <ul class="social">
+                      <li><a href="mailto:zadepschi@yahoo.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+                      <li><a href="https://github.com/zadepschi" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                      <li><a href="https://www.linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  </ul>
+              </div>
+              <form
+              action="https://formspree.io/f/moqrwnpr"
+              method="POST"
+                  >
+                  <input type="hidden" name="_language" value="en"/>
+              <div class="contactForm" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+              data-aos-easing="ease-in-out">
+                  <h2>Send a Message</h2>
+                  <div class="formBox">
+                          <div class="inputBox w50">
+                              <input type="text" required  name="First name">
+                              <span>First Name</span>
+                          </div>
+                          <div class="inputBox w50">
+                              <input type="text" required  name="Last name">
+                              <span>Last Name</span>
+                          </div>
+                          <div class="inputBox w50">
+                              <input type="email" required name="Email">
+                              <span>Email Address</span>
+                          </div>
+                          <div class="inputBox w50">
+                              <input type="tel" required  name="Mobile">
+                              <span>Mobile Number</span>
+                          </div>
+                          <div class="inputBox w100">
+                              <textarea required name="Message"></textarea>
+                              <span>Write your message here...</span>
+                          </div>
+                          <div class="inputBox w100">
+                              <input class="btn" type="submit" value="Send">
+                          </div>
+                  </div>
+              </div>
+          </form>
+          </div>
+      </div>
+      
+      <div class="copy">
+          <div class="lines">
+              <div class="small">
+                  <small><span class="year"></span>© Copyright Zadepschi</small>
+              </div>
+          </div>
+      </div>
+      </section>
+  
+  
+  
+  
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>  
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
