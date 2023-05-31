@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="drip.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,11 +82,119 @@
 
 
 
+<section id="drip">
+    <div class="divDiv">
+  <div class="cont">
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
 
-<section id="about">
-    <h1>about</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</div>
 </section>
 
+
+
+
+
+
+
+<section id="about">
+    
+
+    <div class="container">
+        <div class="box1">
+        
+            <h1 class="developer">Я фронтeнд разработчик</h1> 
+        
+            <p class="par"> В данный момент проживаю в Анталье(Турция). </p> 
+        
+            <p class="par">Путешественница, пианист любитель, окончила  физико-математический <br> факультет Тираспольского гос. университета.  </p>
+        
+            <img class="me" src="me.jpg" alt="">
+        </div>
+        
+        <div class="box2">
+        
+            <p class="par"> Верстаю адаптивные веб-сайты с использованием CSS, Flexbox, BootStrap.  </p>
+        
+            <img class="computer" src="pagePng.png" alt="">
+        
+            <p class="par">  Разрабатываю интерактивные веб-сайты и приложения с помощью JavaScript.  </p>
+            
+            <p class="par">В данный момент изучаю React.</p>
+        
+        </div>
+        </div>
+        
+        
+</section>
+
+
+<section id="drip">
+    <div class="divDiv">
+        
+  <div class="cont">
+    <div class="dripHeader"><h3>Contacts</h3></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</div>
+</section>
 
 
 
@@ -126,6 +236,7 @@
               data-aos-easing="ease-in-out">
                   <h2>Send a Message</h2>
                   <div class="formBox">
+
                           <div class="inputBox w50">
                               <input type="text" required  name="First name">
                               <span>First Name</span>
@@ -181,5 +292,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>
