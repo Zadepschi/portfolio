@@ -89,11 +89,7 @@ h1 {
     }
 }
 
-@media all and (max-width: 768px) {
-    .menu1 {
-        margin-top: 250px;
-    }
-}
+/*
 
 @media all and (max-width: 600px) {
     h1 {
