@@ -89,8 +89,8 @@ h1 {
     }
 }
 
-/*
 
+/* 
 @media all and (max-width: 600px) {
     h1 {
         font-size: 26px;
@@ -104,7 +104,7 @@ h1 {
     .computer {
         width: 400px;
     }
-}
+} */
 
 
 @media all and (max-width: 414px) {

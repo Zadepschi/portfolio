@@ -72,9 +72,13 @@ top: 70px;
     padding: 12px;
     margin: 12px;
     font-size: 27px;
-    filter: drop-shadow(2px 2px 8px  #66FCF1);
+    filter: drop-shadow( 1px 2px  #66FCF1);
+    font-weight: bolder;
 }
-
+ .redFont {
+  color: red;
+  filter: drop-shadow( 1px 2px  rgb(228, 217, 217));
+ }
 a {
     text-decoration: none;
     cursor: pointer;
