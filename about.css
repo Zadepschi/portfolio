@@ -57,9 +57,7 @@
 
 
 @media all and (max-width: 912px) {
-.menu1 {
-    margin-top: 350px;
-}
+
       
 .container {
     display: flex;
@@ -112,14 +110,6 @@ h1 {
     }
 }
 
-@media all and (max-width: 540px) {
-    .menu1 {
-        margin-top: 150px;
-    }
-    .container {
-        margin-top: 50px;
-    }
-}
 
 @media all and (max-width: 414px) {
     .computer {
