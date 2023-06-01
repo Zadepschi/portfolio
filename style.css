@@ -71,8 +71,8 @@ top: 70px;
 .paragraphMenu{
     padding: 12px;
     margin: 12px;
-    font-size: 27px;
-    filter: drop-shadow( 1px 2px  #66FCF1);
+    font-size: 25px;
+    filter: drop-shadow( 1px 2px  #2fc7ff);
     font-weight: bolder;
 }
  .redFont {
@@ -375,7 +375,7 @@ a {
   position: absolute;
   z-index: 10;
   filter: drop-shadow(2px 2px 8px  #2fc7ff);
-  width: 400px;
+  width: 380px;
   margin-top: 50px;
   
   }
@@ -423,7 +423,7 @@ h1 {
     .paragraphMenu{
         padding: 10px;
         margin: 10px;
-        font-size: 23px;
+
     }
     .picPng {
          margin-top: 120px;
@@ -471,7 +471,7 @@ h1 {
     .paragraphMenu{
         padding: 8px;
         margin: 8px;
-        font-size: 18px;
+        font-size: 23px;
     }
     .picPng {
         margin-top: 100px;
@@ -494,7 +494,7 @@ h1 {
   .paragraphMenu{
     padding: 7px;
     margin: 10px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .icon {
@@ -504,7 +504,12 @@ h1 {
     font-size: 20px;
   }
   }
-   
+  @media all  and (max-width: 320px) {
+    .paragraphMenu{
+      margin: 7px;
+      font-size: 18px;
+  }
+  }
   
 
    
@@ -520,259 +525,9 @@ h1 {
     .sp-container h2.frame-4 {
         font-size: 20px;
      }
-  }
-  /* 
-  @media screen and (max-width: 912px)  {
-    .menu1 {
-      margin-top: 1000px;
-    }
-    
-    nav li a {
-      font-size: 55px;
-    }
-        .menu-outer:hover {
-     background-image: url(https://cdn.glitch.global/a48b816f-c946-4892-96e6-da77fa3342cf/hhh.jpg?v=1648802148168);
-  }
-  .picPng {
-    width: 700px ;
-    height: 700px;
-    margin-left: 20px;
-  }
-  
-  .sp-container h2 {
-    width: 80%;
-  }
+     .paragraphMenu{
 
-  }
-  
-  
-  
-  
-  
-  @media all and (max-width: 820px) {
-     .menu1 {
-      margin-top: 850px;
-    }
-      
-    .picPng {
-        width: 600px ;
-        height: 600px;
-    }
-    
-    .iconList {
-        margin-top: 350px;
-        margin-left: -330px;
-    } 
-      .sp-container h2 {
-    font-size: 53px;
-  }
-  
-  }
-  
-  
-  
-  @media all and (max-width: 768px) {
-       .menu1 {
-      margin-top: 750px;
-    }
-    .sp-container h2 {
-      font-size: 50px;
-  }
-  .iconList {
-    margin-top: 250px;
-    margin-left: -350px;
-  } 
-  }
-  
-  
-  
-  
-  @media all and (max-width: 600px) {
-     .picPng {
-        width: 500px ;
-        height: 500px;
-    }
-    nav li a {
-      font-size: 40px;
-    }
-    .menu1 {
-      margin-top: 700px;
-    }
-    .sp-container h2 {
-      font-size: 40px;
-    margin-left: 58px;
-  }
-  .iconList {
-    margin-left: -430px;
-    margin-top: 150px;
-    
-  }
-    .menu-outer:hover {
-      background-image: url(https://cdn.glitch.global/a48b816f-c946-4892-96e6-da77fa3342cf/hhh2.jpg?v=1648802187217);
-   }
-    nav ul a {padding: 10px;}
-  }
-  
-  
-  
-  
-  @media screen and (max-width: 540px) {
-    .menu1 {
-      margin-top: 500px;
-    }
-    .picPng {
-      width: 400px ;
-      height: 400px;
-  }
-  .iconList {
-    margin-top: -10px;
-    margin-left: -420px;
-  } 
-  .icon {
-    width: 35px;
-    height: 35px;
-    }
-
-  }
-  
-  
-  
-  
-  
-  @media screen and (max-width: 414px) {
-      .menu1 {
-      margin-top:  400px;
-    }
-  
-    .sp-container h2 {
-      font-size: 25px;
-  }
-      
-  
-    .picPng {
-      width: 300px ;
-      height: 300px;
-  }
-  
-  .icon {
-    width: 30px;
-    height: 30px;
-    }
-    
-  .iconList {
-    margin-top: -70px;
-    margin-left: -470px;
+      font-size: 15px;
   }
   }
   
-  
-  
-  @media screen and (max-width: 393px) {
-        .menu1 {
-      margin-top: 580px;
-    }
-    
- 
-  .iconList {
-    margin-top: -20px;
-    margin-left: -500px;
-  } 
-  .icon {
-    width: 40px;
-    height: 40px;
-    }
-    .picPng {
-      margin-top: 20px;
-      width: 330px ;
-      height: 330px;
-  }
-  }
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  @media screen and (max-width: 375px)  {
-    nav li a {
-      font-size: 30px;
-    }
-    .menu1 {
-      margin-top: 430px;
-    }
-    .picPng {
-      margin-top: 40px;
-      width: 310px;
-      height: 310px;
-  }
-    .icon {
-      width: 25px;
-      height: 25px;
-  }
-  .iconList {
-    margin-top: -40px;
-    margin-left: -480px;
-  } 
-  .sp-container h2 {
-    font-size: 25px;
-  margin-left: 34px;
-  }
-  }
-  
-  
-  @media screen and (max-width: 360px) {
-      .picPng {
-      
-      width: 280px;
-      height: 280px;
-  }
-     .menu1 {
-      margin-top: 420px;
-    }
-
-    .iconList {
-      margin-top: -70px;
-      margin-left: -490px;
-    } 
-  } 
-  
-  
-  
-  @media screen and (max-width: 320px) {
-       .menu1 {
-      margin-top: 450px;
-    }
-    .icon {
-      width: 25px;
-      height: 25px;
-  }
-  .picPng {
-    width: 280px;
-    height: 280px;
-  }
-  .iconList {
-    margin-left: -510px;
-  } 
-  }
-  
-  
-  
-  @media screen and (max-width: 280px) {
-    .picPng {
-      width: 240px;
-      height: 240px;
-    }
-    .iconList {
-      margin-top: -60px;
-      margin-left: -530px;
-    }
-    .sp-container h2 {
-      font-size: 17px;
-    }
-  }
-  */
