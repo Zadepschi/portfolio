@@ -61,30 +61,7 @@
 
 
 
-  
-
-
-
-@media all and (max-width: 912px) {
-
-      
-.container {
-    display: flex;
-    flex-direction: column;
-}
-.boxAbout1 {
-    flex-direction: column-reverse;
-}
-.boxAbout1, .boxAbout2 {
-    width: 90%;
-}
-.boxAbout1, .boxAbout2 {
-    align-self: center;
-}
-.par {
-    font-size: 20px;
-}
-}
+  /* ==================== SKILLS ==================== */
 
 
 
@@ -93,12 +70,11 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 50px;
-    width: 100vw;
 }
  .square {
     position: relative;
-    max-width: 90px;
-    height: 90px;
+    max-width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +109,7 @@
     border: 2px solid #9fe4fc;
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     transition: .5s;
-    animation: animate 4s linear infinite;
+    animation: animate 8s linear infinite;
 }
 .aboutSkills .square:hover span:nth-child(2) {
     background-color: #9fe4fc;
@@ -188,11 +164,54 @@
 
 
 
+/* ==================== MOBILE ==================== */
+
+@media all and (max-width: 912px) {
+
+      
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .boxAbout1 {
+        flex-direction: column-reverse;
+    }
+    .boxAbout1, .boxAbout2 {
+        width: 90%;
+    }
+    .boxAbout1, .boxAbout2 {
+        align-self: center;
+    }
+    .par {
+        font-size: 20px;
+    }
+    }
+
+    @media all and (max-width: 600px) {
+        .par {
+            font-size: 16px;
+        }
+    }
+
 @media all and (max-width: 414px) {
     .computer {
         width: 220px;
     }
     .me {
         width: 130px;
+    }
+}
+@media all and (max-width: 375px) {
+    .par {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .square {
+   
+        max-width: 70px;
+        height: 70px;
+    
     }
 }
