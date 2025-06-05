@@ -9,7 +9,7 @@
 
 #contact {
     min-height: 100vh;
-    background-image: url(world.png);
+    background-image: url(pics/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -129,7 +129,7 @@
     margin-left: 150px;
     width: calc(100% - 150px);
     height: 100%;
-    background: rgb(255, 255, 255, 0.6);
+    background: #ffffffec;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
 .containerMe .contactForm h2{
@@ -192,14 +192,15 @@
 .containerMe .contactForm .formBox .inputBox .btn{
     position: relative;
     cursor: pointer;
-    background-color: #0e3150b0;
-    color: #FFF;
+    background-color: #2fc7ff;
+    color: #080808;
     border: none;
     max-width: 150px;
     padding: 12px;
 }
 .containerMe .contactForm .formBox .inputBox .btn:hover{
     background-color: #0E3150;
+    color: white;
 }
 
 
@@ -218,7 +219,7 @@
     position: absolute;
     margin: auto;
     height: 0.5px;
-    background: #333;
+    background:white;
     width: 35%;
     top: 60%;
 }
@@ -229,6 +230,7 @@
     left: 0;
 }
 .copy .lines .small{
+    color: white;
     width: 100%;
     left: 0;
     right: 0;
@@ -238,6 +240,9 @@
     text-align: center;
     font-size: 14px
 }
+
+
+
 
 
 

@@ -1,0 +1,35 @@
+.comingSoon {
+  background-color: #0e0e0e;
+  color: #e0f7ff;
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.comingSoon .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.comingSoon h2 {
+  font-size: 32px;
+  color: #2fc7ff;
+  margin-bottom: 20px;
+}
+
+.comingSoon p {
+  font-size: 18px;
+  color: #a9d8f0;
+}
+.comingSoon .container {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s forwards ease-out;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
