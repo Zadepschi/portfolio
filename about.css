@@ -71,6 +71,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 50px;
+    width: 80%;
+}
+
+.width {
+    display: flex;
+    justify-content: center;
 }
  .square {
     position: relative;
@@ -80,6 +86,7 @@
     justify-content: center;
     align-items: center;
     border-color: #2fc7ff;
+    margin: 10px;
 }
 .aboutSkills .square span {
     -webkit-box-shadow: 0 0 5px #2fc7ff;
@@ -98,7 +105,7 @@
     animation: animate 6s linear infinite;
 }
 .aboutSkills .square:hover span:nth-child(1) {
-    background-color: #9fe4fc;
+    background-color: rgb(159, 228, 252, 0.2);
     border: none;
 }
 .aboutSkills .square span:nth-child(2) {
@@ -113,7 +120,7 @@
     animation: animate 8s linear infinite;
 }
 .aboutSkills .square:hover span:nth-child(2) {
-    background-color: #73d7f8;
+ background-color: rgb(159, 228, 252, 0.2);
     border: none;
 }
 .aboutSkills .square span:nth-child(3) {
@@ -128,7 +135,7 @@
     animation: animate2 10s linear infinite;
 }
 .aboutSkills .square:hover span:nth-child(3) {
-    background-color: #9fe4fc;
+    background-color: rgb(159, 228, 252, 0.2);
     border: none;
 }
 @keyframes animate {
@@ -147,6 +154,8 @@
         transform: rotate(0deg);
     }
 }
+
+
 .aboutSkills .box {
     position: relative;
     padding: 20px 40px;
@@ -234,13 +243,29 @@
     .par {
         font-size: 20px;
     }
+    .box-container {
+   padding: 15px;
+    width: 85%;
+}
+
     }
 
     @media all and (max-width: 600px) {
         .par {
             font-size: 16px;
         }
+            .box-container {
+  
+    width: 90%;
+}
+.square {
+    margin: 4px;
+}
     }
+    
+
+
+
 
 @media all and (max-width: 414px) {
     .computer {
@@ -249,6 +274,10 @@
     .me {
         width: 130px;
     }
+ .box-container {
+  
+    width: 98%;
+}
 }
 @media all and (max-width: 375px) {
     .par {

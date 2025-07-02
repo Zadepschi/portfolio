@@ -1,35 +1,166 @@
-.comingSoon {
-  background-color: #0e0e0e;
-  color: #e0f7ff;
-  padding: 80px 20px;
-  text-align: center;
+#projects {
+  background-color: #000;
+  position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-.comingSoon .container {
-  max-width: 800px;
-  margin: 0 auto;
+
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* выравнивание по центру */
+  gap: 25px;
+  padding: 20px;
+  margin: 10px;
+  min-height: 100vh;
+  box-sizing: border-box;
+   position: relative;
+  z-index: 2;
 }
 
-.comingSoon h2 {
-  font-size: 32px;
-  color: #2fc7ff;
-  margin-bottom: 20px;
+.containerCard {
+  width: 450px; /* чтобы влезало по 3 карточки в ряд */
+  min-width: 250px;
+  box-sizing: border-box;
 }
 
-.comingSoon p {
+.container {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(7, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 230px; /* любая нужная высота */
+  object-fit: cover;
+  display: block;
+}
+h4 {
+  text-align: center;
+  margin-top: 10px;
   font-size: 18px;
-  color: #a9d8f0;
-}
-.comingSoon .container {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 1.5s forwards ease-out;
+  font-weight: 600;
+  color: #f8f1f1;
 }
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15, 20, 20, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.text {
+   font-size: 15px;
+  color: #fdf6f6;
+  margin: 10px;
+}
+
+.textCart {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fdf6f6;
+  
+}
+ul {
+  margin-bottom: 15px;
+   list-style-type: none;
+}
+
+
+
+.btn {
+  padding: 5px 25px 5px 25px;
+   font-weight: bold;
+    border-radius: 12px;
+    border: 4px solid #2fc7ff;
+}
+
+.btn:hover {
+  background-color: #2fc7ff;
+  color: white;
+  border-color: #1ea5d6;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Линии — ниже */
+#projects .linesBack {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* ниже изображения */
+}
+
+/* Обёртка изображения — выше */
+#projects .image-wrapper {
+  position: relative;
+  z-index: 2; /* выше линий */
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+/* Одна линия */
+#projects .line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(158, 137, 243, 0.01);
+}
+
+#projects .line::after {
+  content: '';
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(214, 192, 192, 0) 0%, #2fc7ff 75%, #fff 100%);
+  animation: drop 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#projects .line:nth-child(1) { margin-left: -35%; }
+#projects .line:nth-child(2) { margin-left: -17.5%; }
+#projects .line:nth-child(3) { margin-left: 0%; }
+#projects .line:nth-child(4) { margin-left: 17.5%; }
+#projects .line:nth-child(5) { margin-left: 35%; }
+
+#projects .line:nth-child(1)::after { animation-delay: 0.5s; }
+#projects .line:nth-child(2)::after { animation-delay: 1.5s; }
+#projects .line:nth-child(3)::after { animation-delay: 1s; }
+#projects .line:nth-child(4)::after { animation-delay: 2.5s; }
+#projects .line:nth-child(5)::after { animation-delay: 2s; }
+
+
+@keyframes drop {
+  0% { top: -50%; }
+  100% { top: 110%; }
 }
