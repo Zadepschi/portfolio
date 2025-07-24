@@ -19,7 +19,7 @@
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* выравнивание по центру */
+  justify-content: center; 
   gap: 25px;
   padding: 20px;
   margin: 10px;
@@ -30,10 +30,14 @@
 }
 
 .containerCard {
-  width: 450px; /* чтобы влезало по 3 карточки в ряд */
+  width: 450px; 
   min-width: 250px;
   box-sizing: border-box;
    aspect-ratio: 16 / 9;
+   background-color: #201f1f;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 12px;
 }
 
 .container {
@@ -46,7 +50,7 @@
 .image {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;   /* или другое нужное соотношение */
+  aspect-ratio: 16 / 9;   
   object-fit: cover;
   display: block;
 }
@@ -55,13 +59,13 @@
 h4 {
   text-align: center;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 17px;
   color: #f8f1f1;
-  font-weight: 400; /* обычный вес */
+  font-weight: 400; 
 }
 
 h4 span {
-  font-weight: 600; /* жирный только для span */
+  font-weight: 600; 
 }
 
 .overlay {
@@ -92,7 +96,7 @@ h4 span {
   font-weight: bold;
   color: #fdf6f6;
  text-shadow:
-  1px 1px 2px rgba(0, 0, 0, 0.8),  /* тень вниз-вправо */
+  1px 1px 2px rgba(0, 0, 0, 0.8), 
   0 0 5px #2fc7ff, 
   0 0 10px #2fc7ff;
 }
@@ -109,25 +113,25 @@ h4 span {
 
 
 
-/* Линии — ниже */
+
 #projects .linesBack {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* ниже изображения */
+  z-index: 1; 
 }
 
-/* Обёртка изображения — выше */
+
 #projects .image-wrapper {
   position: relative;
-  z-index: 2; /* выше линий */
+  z-index: 2;
   display: flex;
   justify-content: center;
   padding-top: 100px;
 }
 
-/* Одна линия */
+
 #projects .line {
   position: absolute;
   width: 2px;
@@ -167,10 +171,17 @@ h4 span {
   100% { top: 110%; }
 }
 
+@media all  and (max-width: 1250px) {
+  h4 {
 
+  font-size: 14px;
+
+}
+}
 
 
 @media all  and (max-width: 990px)  {
+
 
   .cards-wrapper {
       gap: 20px;
@@ -178,7 +189,7 @@ h4 span {
 
   }
    .containerCard {
-  width: 380px; /* чтобы влезало по 3 карточки в ряд */
+  width: 380px; 
 
 }
 
@@ -199,12 +210,12 @@ ul {
 
 @media all  and (max-width: 820px) {
      .containerCard {
-  width: 350px; /* чтобы влезало по 3 карточки в ряд */
+  width: 350px; 
 }
 }
 @media all  and (max-width: 770px) {
      .containerCard {
-  width: 320px; /* чтобы влезало по 3 карточки в ряд */
+  width: 320px; 
 }
 
 
@@ -215,7 +226,7 @@ ul {
 }
 @media all  and (max-width: 710px) {
      .containerCard {
-  width: 290px; /* чтобы влезало по 3 карточки в ряд */
+  width: 290px; 
 }
 
 .textCart {
@@ -226,7 +237,7 @@ ul {
 
 @media all  and (max-width: 645px) {
      .containerCard {
-  width: 250px; /* чтобы влезало по 3 карточки в ряд */
+  width: 250px; 
 }
 
 .textCart {
@@ -261,7 +272,11 @@ ul {
 }
 
 @media all  and (max-width: 380px) {
-  
+    h4 {
+
+  font-size: 12px;
+
+}
 
 
 .textCart {
