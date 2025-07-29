@@ -64,9 +64,16 @@ h4 {
   font-weight: 400; 
 }
 
-h4 span {
+h4 .span {
   font-weight: 600; 
 }
+
+
+.color {
+    color: #2fc7ff;
+}
+
+
 
 .overlay {
   position: absolute;
