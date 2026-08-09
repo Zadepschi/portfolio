@@ -21,61 +21,150 @@
     
 
 
-    <div id="circle1"></div>
-	<div id="circle2"></div>
-	<div id="circle3"></div>
+
+    <section id="main" class="hero">
 
 
+    <!-- Navigation -->
+    <nav class="hero-nav">
+
+      <a href="#main" class="logo">
+    <img src="./pics/logoNZ.png" alt="Natalia Z - Frontend Developer" width="80px">
+</a>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+
+            <a href="#about">ABOUT</a>
+
+            <a href="#skills">SKILLS</a>
+
+            <a href="#projects" class="active">
+                PROJECTS
+            </a>
+
+            <a href="#contact">CONTACT</a>
+
+        </div>
+
+    </nav>
 
 
-    <section id="main">
+    <!-- Hero content -->
+    <div class="hero-content">
+
+        <!-- Text -->
+        <div class="hero-text">
+
+            <p class="hero-label">
+                FRONT-END DEVELOPER
+            </p>
+
+            <h1>
+                Hi, I'm
+                <span>Natalia.</span>
+            </h1>
+
+            <p class="hero-description">
+                I build interactive and responsive web applications
+                using JavaScript, React and modern web technologies.
+            </p>
 
 
-       <div class="png">
-        <img class="picPng" src="pics/detka.png" alt="girl">
-      </div>
+            <div class="hero-stack">
 
- 
-            <div class="menu1">
-                <a href="#projects"> <p class="paragraphMenu redFont">PROJECTS</p></a>
-                <a href="#contact"> <p class="paragraphMenu">CONTACTS</p></a>
-        
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+
             </div>
 
-            <div class="menu2">
-                <a href="#about"> <p class="paragraphMenu">ABOUT</p></a>
-                <a href="#skills"> <p class="paragraphMenu">SKILLS</p></a>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="hero-btn primary">
+                    VIEW PROJECTS
+                </a>
+
+                <a href="#contact" class="hero-btn secondary">
+                    CONTACT ME
+                </a>
+
             </div>
 
+        </div>
 
-      <div class="iconLocation">
-      <div class="iconList">
-        <a href="https://github.com/Zadepschi" target="_blank" ><img class="icon icon1" src="pics/github.png" alt=""></a>
-       <a href="https://codepen.io/begitetuda" target="_blank"><img class="icon icon2" src="pics/codepen.png" alt=""></a> 
-        <a href="https://www.instagram.com/zadepschi/" target="_blank"><img class="icon icon3" src="pics/insta.png" alt=""></a>
-       <a href="https://www.linkedin.com/in/natalia-zahar/"  target="_blank"><img class="icon icon4" src="pics/in.png" alt="logo-linkedin"></a> 
-      </div>
+
+        <!-- Image -->
+        <div class="hero-image">
+
+            <div class="hero-glow"></div>
+
+            <img
+                src="pics/detka.png"
+                class="picPng"
+                alt="Developer illustration"
+            >
+
+        </div>
+
     </div>
-      
-      
 
 
-    <div class="sp-container">
-      <div class="sp-content">
-          <h2 class="frame-1">HEY!</h2>
-          <h2 class="frame-2">I AM NATALIA</h2>
-          <h2 class="frame-3">I AM A FRONT-END DEVELOPER</h2>
-          <h2 class="frame-4">MY AIM IS</h2>
-          <h2 class="frame-5">
-            <div class="everyDay">
-              <span class="span1">TO IMPROVE </span>
-              <span class="span1">EVERY</span>
-              <span class="span1">DAY!</span>
-            </div>
-          </h2>
-      </div>
-  </div>
-  </section>
+    <!-- Social links -->
+    <div class="social-links">
+
+        <a
+            href="https://github.com/Zadepschi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+        >
+            <img src="pics/github.png" alt="">
+        </a>
+
+        <a
+            href="https://codepen.io/begitetuda"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CodePen"
+        >
+            <img src="pics/codepen.png" alt="">
+        </a>
+
+        <a
+            href="https://www.instagram.com/zadepschi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+            <img src="pics/insta.png" alt="">
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/natalia-zahar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+        >
+            <img src="pics/in.png" alt="">
+        </a>
+
+    </div>
+
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+        <span></span>
+        <small>SCROLL</small>
+    </a>
+
+</section>
 
 
 <section id="drip">
@@ -693,23 +782,25 @@
       </div>
       </section>
   
+      
   
   
   
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-          AOS.init();
-      </script>  
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script>
+    AOS.init();
+</script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
 
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="about.js"></script>
+<script src="about.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
