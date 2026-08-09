@@ -1,4 +1,22 @@
 /* ========================================
+   GLOBAL RESET — HERO VIEWPORT
+   ======================================== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ========================================
    HERO
 ======================================== */
 
@@ -728,37 +746,60 @@
     }
 }
 
-
 /* ========================================
-   MOBILE
-======================================== */
+   MOBILE — FINAL HERO
+   ======================================== */
 
 @media (max-width: 760px) {
 
-    /* Disable custom cursor on touch devices */
+    /* ---------- MAIN ---------- */
 
-    #circle1,
-    #circle2,
-    #circle3 {
-        display: none;
+    #main {
+        width: 100%;
+        height: 100dvh;
+        min-height: 100dvh;
+        overflow: hidden;
     }
 
 
-    /* Navigation */
+    /* ---------- NAVIGATION ---------- */
 
     .hero-nav {
-        padding: 22px 5%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 72px;
+
+        padding: 14px 5%;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        z-index: 100;
     }
 
     .logo img {
-        width: 78px;
+        width: 70px;
     }
 
     .menu-toggle {
         display: block;
 
+        width: 42px;
+        height: 42px;
+
+        padding: 8px;
+        box-sizing: border-box;
+
         z-index: 101;
     }
+
+
+    /* ---------- MOBILE MENU ---------- */
 
     .nav-links {
         position: fixed;
@@ -766,25 +807,20 @@
         top: 0;
         right: -100%;
 
-        width: min(320px, 78%);
-
-        height: 100vh;
+        width: min(320px, 80%);
+        height: 100dvh;
 
         padding: 100px 40px;
-
         box-sizing: border-box;
 
         display: flex;
-
         flex-direction: column;
-
         align-items: flex-start;
 
         gap: 30px;
 
         background: rgba(0, 0, 0, 0.97);
-
-        border-left: 1px solid rgba(47, 199, 255, 0.12);
+        border-left: 1px solid rgba(47, 199, 255, 0.15);
 
         transition: right 0.4s ease;
 
@@ -800,227 +836,175 @@
     }
 
 
-    /* Hero layout */
+    /* ---------- HERO LAYOUT ---------- */
 
     .hero-content {
-        grid-template-columns: 1fr;
-
-        min-height: auto;
-
-        padding-top: 125px;
-        padding-bottom: 110px;
-
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 650px;
+        width: 90%;
+        height: 100dvh;
+        min-height: 0;
 
         margin: 0 auto;
+        padding: 78px 0 48px;
 
-        padding-top: 0;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        position: relative;
+        z-index: 5;
     }
 
 
-    /* Label */
+    /* ---------- TEXT ---------- */
+
+    .hero-text {
+        width: 100%;
+        max-width: 430px;
+
+        margin: 0;
+        padding: 0;
+
+        flex-shrink: 0;
+    }
 
     .hero-label {
-        margin-bottom: 16px;
+        margin: 0 0 10px;
 
-        font-size: 12px;
-
+        font-size: 11px;
+        line-height: 1.2;
         letter-spacing: 3px;
     }
 
-
-    /* Heading */
-
     .hero-text h1 {
-        font-size: clamp(44px, 11vw, 58px);
+        margin: 0;
 
-        line-height: 0.96;
-
+        font-size: clamp(43px, 11vw, 56px);
+        line-height: 0.92;
         letter-spacing: -2px;
     }
 
 
-    /* Description */
+    /* ---------- DESCRIPTION ---------- */
 
     .hero-description {
-        max-width: 540px;
+        max-width: 400px;
 
-        margin: 24px auto 22px;
+        margin: 14px auto 15px;
 
-        font-size: 16px;
-
-        line-height: 1.6;
+        font-size: 13.5px;
+        line-height: 1.4;
     }
 
 
-    /* Stack */
+    /* ---------- TECHNOLOGIES ---------- */
 
     .hero-stack {
         justify-content: center;
 
-        margin-bottom: 28px;
-    }
+        gap: 7px;
 
-
-    /* Buttons */
-
-    .hero-buttons {
-        justify-content: center;
-
-        flex-wrap: wrap;
-    }
-
-    .hero-btn {
-        min-width: 165px;
-    }
-
-
-    /* Image */
-
-    .hero-image {
-        min-height: 380px;
-
-        margin-top: -20px;
-
-        transform: none;
-    }
-
-    .picPng {
-        width: min(340px, 82%);
-    }
-
-    .hero-glow {
-        width: 280px;
-        height: 280px;
-
-        filter: blur(70px);
-    }
-
-
-    /* Social */
-
-    .social-links {
-        left: 50%;
-
-        transform: translateX(-50%);
-
-        bottom: 25px;
-    }
-
-
-    /* Scroll */
-
-    .scroll-indicator {
-        display: none;
-    }
-}
-
-
-/* ========================================
-   SMALL MOBILE
-======================================== */
-
-@media (max-width: 480px) {
-
-    .hero-nav {
-        padding: 20px 5%;
-    }
-
-    .logo img {
-        width: 72px;
-    }
-
-    .hero-content {
-        width: 88%;
-
-        padding-top: 105px;
-        padding-bottom: 100px;
-    }
-
-
-    /* Heading */
-
-    .hero-text h1 {
-        font-size: clamp(40px, 12vw, 52px);
-
-        letter-spacing: -1.5px;
-    }
-
-
-    /* Label */
-
-    .hero-label {
-        font-size: 11px;
-
-        letter-spacing: 2.5px;
-    }
-
-
-    /* Description */
-
-    .hero-description {
-        font-size: 15px;
-
-        line-height: 1.55;
-    }
-
-
-    /* Stack */
-
-    .hero-stack {
-        gap: 8px;
+        margin: 0 0 14px;
     }
 
     .hero-stack span {
-        padding: 7px 13px;
+        padding: 6px 12px;
 
-        font-size: 13px;
+        font-size: 11px;
+        line-height: 1.2;
+
+        border-radius: 20px;
     }
 
 
-    /* Buttons */
+    /* ---------- BUTTONS ---------- */
 
     .hero-buttons {
-        flex-direction: column;
-
         width: 100%;
 
-        gap: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        flex-shrink: 0;
     }
 
     .hero-btn {
-        width: 100%;
+        width: calc(50% - 5px);
+        min-width: 0;
 
-        height: 52px;
+        height: 46px;
+
+        padding: 0 8px;
+
+        font-size: 10px;
+        letter-spacing: 1.2px;
     }
 
 
-    /* Image */
+    /* ---------- IMAGE ---------- */
 
     .hero-image {
-        min-height: 320px;
+        width: 100%;
+        height: 235px;
+        min-height: 0;
 
-        margin-top: -15px;
-    }
+        margin-top: 4px;
 
-    .picPng {
-        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        transform: none;
+
+        flex-shrink: 1;
     }
 
     .hero-glow {
         width: 240px;
         height: 240px;
+
+        filter: blur(65px);
+        opacity: 0.65;
+    }
+
+    .picPng {
+        width: min(260px, 62vw);
+        max-height: 220px;
+        height: auto;
+
+        object-fit: contain;
+
+        filter:
+            drop-shadow(0 0 8px rgba(47, 199, 255, 0.75))
+            drop-shadow(0 0 25px rgba(47, 199, 255, 0.18));
     }
 
 
-    /* Social */
+    /* ---------- SOCIAL LINKS ---------- */
 
     .social-links {
+        position: absolute;
+
+        left: 50%;
+        bottom: 13px;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+
         gap: 10px;
+
+        z-index: 30;
     }
 
     .social-links a {
@@ -1029,46 +1013,158 @@
     }
 
     .social-links img {
-        width: 21px;
-        height: 21px;
+        width: 20px;
+        height: 20px;
+    }
+
+
+    /* ---------- SCROLL ---------- */
+
+    .scroll-indicator {
+        display: none;
+    }
+
+
+    /* ---------- CURSOR ---------- */
+
+    #circle1,
+    #circle2,
+    #circle3 {
+        display: none;
     }
 }
 
 
 /* ========================================
-   VERY SMALL MOBILE
-======================================== */
+   SHORT PHONES
+   ======================================== */
 
-@media (max-width: 360px) {
+@media (max-width: 760px) and (max-height: 700px) {
 
-    .hero-text h1 {
-        font-size: 42px;
+    .hero-nav {
+        height: 64px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-    .hero-description {
-        font-size: 14px;
+    .logo img {
+        width: 62px;
+    }
+
+    .hero-content {
+        padding-top: 68px;
+        padding-bottom: 42px;
     }
 
     .hero-label {
+        margin-bottom: 7px;
         font-size: 10px;
+        letter-spacing: 2.5px;
+    }
 
-        letter-spacing: 2px;
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        margin: 10px auto 11px;
+
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .hero-stack {
+        margin-bottom: 11px;
+    }
+
+    .hero-stack span {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .hero-btn {
+        height: 42px;
+        font-size: 9px;
     }
 
     .hero-image {
-        min-height: 290px;
+        height: 190px;
+        margin-top: 2px;
     }
 
     .picPng {
-        width: 250px;
+        width: 220px;
+        max-height: 180px;
     }
 
     .hero-glow {
-        width: 210px;
-        height: 210px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .social-links {
+        bottom: 8px;
+    }
+
+    .social-links a {
+        width: 31px;
+        height: 31px;
+    }
+
+    .social-links img {
+        width: 18px;
+        height: 18px;
     }
 }
 
+
+/* ========================================
+   VERY SMALL PHONES
+   ======================================== */
+
+@media (max-width: 380px) {
+
+    .hero-content {
+        width: 92%;
+    }
+
+    .hero-text h1 {
+        font-size: 37px;
+    }
+
+    .hero-description {
+        max-width: 310px;
+        font-size: 11.5px;
+    }
+
+    .hero-stack {
+        gap: 5px;
+    }
+
+    .hero-stack span {
+        padding: 5px 9px;
+        font-size: 9.5px;
+    }
+
+    .hero-btn {
+        height: 40px;
+        font-size: 8.5px;
+    }
+
+    .hero-image {
+        height: 170px;
+    }
+
+    .picPng {
+        width: 200px;
+        max-height: 165px;
+    }
+
+    .hero-glow {
+        width: 180px;
+        height: 180px;
+    }
+}
 
 /* ========================================
    REDUCED MOTION
