@@ -245,11 +245,11 @@ body {
 /* Small label */
 
 .hero-label {
-    margin: 0 0 18px;
+    margin: 10px 0 18px;
 
     color: #2fc7ff;
 
-    font-size: 15px;
+    font-size: 26px;
     font-weight: 700;
 
     letter-spacing: 4px;
@@ -303,7 +303,7 @@ body {
 
     color: rgba(255, 255, 255, 0.72);
 
-    font-size: 17px;
+    font-size: 20px;
 
     line-height: 1.6;
 }
@@ -505,7 +505,7 @@ body {
 }
 
 .picPng:hover {
-    transform: translateY(-8px);
+   
 
     filter:
         drop-shadow(0 0 10px rgba(47, 199, 255, 0.9))
@@ -719,7 +719,7 @@ body {
     .hero-description {
         max-width: 500px;
 
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero-image {
@@ -861,7 +861,7 @@ body {
 
     /* ---------- TEXT ---------- */
 
-    .hero-text {
+       .hero-text {
         width: 100%;
         max-width: 430px;
 
@@ -871,10 +871,11 @@ body {
         flex-shrink: 0;
     }
 
-    .hero-label {
-        margin: 0 0 10px;
 
-        font-size: 11px;
+    .hero-label {
+        margin: 60px 0 10px;
+
+        font-size: 20px;
         line-height: 1.2;
         letter-spacing: 3px;
     }
@@ -895,7 +896,7 @@ body {
 
         margin: 14px auto 15px;
 
-        font-size: 13.5px;
+        font-size: 18px;
         line-height: 1.4;
     }
 
@@ -922,19 +923,19 @@ body {
 
     /* ---------- BUTTONS ---------- */
 
-    .hero-buttons {
+   .hero-buttons {
         width: 100%;
 
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
 
         gap: 10px;
 
         flex-shrink: 0;
-    }
 
+        margin-bottom: 0;
+    }
     .hero-btn {
         width: calc(50% - 5px);
         min-width: 0;
@@ -950,12 +951,14 @@ body {
 
     /* ---------- IMAGE ---------- */
 
-    .hero-image {
+        .hero-image {
         width: 100%;
-        height: 235px;
+
+        flex: 1 1 auto;
+
         min-height: 0;
 
-        margin-top: 4px;
+        margin: 0;
 
         display: flex;
         align-items: center;
@@ -964,43 +967,55 @@ body {
         position: relative;
 
         transform: none;
-
-        flex-shrink: 1;
     }
 
-    .hero-glow {
-        width: 240px;
-        height: 240px;
+       .hero-glow {
+        position: absolute;
 
-        filter: blur(65px);
+        width: 210px;
+        height: 210px;
+
+        border-radius: 50%;
+
+        background: rgba(47, 199, 255, 0.07);
+
+        filter: blur(60px);
+
         opacity: 0.65;
     }
 
-    .picPng {
-        width: min(260px, 62vw);
-        max-height: 220px;
+      .picPng {
+        position: relative;
+        z-index: 2;
+
+        width: min(245px, 60vw);
+
+        max-height: 210px;
+
         height: auto;
 
         object-fit: contain;
 
         filter:
             drop-shadow(0 0 8px rgba(47, 199, 255, 0.75))
-            drop-shadow(0 0 25px rgba(47, 199, 255, 0.18));
+            drop-shadow(0 0 22px rgba(47, 199, 255, 0.18));
     }
+
 
 
     /* ---------- SOCIAL LINKS ---------- */
 
-    .social-links {
+     .social-links {
         position: absolute;
 
         left: 50%;
-        bottom: 13px;
+        bottom: 18px;
 
         transform: translateX(-50%);
 
         display: flex;
         align-items: center;
+        justify-content: center;
 
         gap: 10px;
 
@@ -1051,14 +1066,29 @@ body {
         width: 62px;
     }
 
-    .hero-content {
-        padding-top: 68px;
-        padding-bottom: 42px;
+  .hero-content {
+        width: 90%;
+        height: calc(100dvh - 72px);
+
+        margin: 72px auto 0;
+        padding: 14px 0 58px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        position: relative;
+        z-index: 5;
     }
+
 
     .hero-label {
         margin-bottom: 7px;
-        font-size: 10px;
+        font-size: 16px;
         letter-spacing: 2.5px;
     }
 
@@ -1068,8 +1098,6 @@ body {
 
     .hero-description {
         margin: 10px auto 11px;
-
-        font-size: 12px;
         line-height: 1.35;
     }
 
@@ -1102,9 +1130,7 @@ body {
         height: 200px;
     }
 
-    .social-links {
-        bottom: 8px;
-    }
+  
 
     .social-links a {
         width: 31px;
@@ -1134,7 +1160,6 @@ body {
 
     .hero-description {
         max-width: 310px;
-        font-size: 11.5px;
     }
 
     .hero-stack {
