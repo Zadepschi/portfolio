@@ -27,7 +27,7 @@
 #about {
     position: relative;
     min-height: 100vh;
-    padding: 30px 30px 30px;
+    padding: 20px 20px 20px;
 
     background-color: var(--bg);
     background-image: url("pics/background.jpg");
@@ -56,8 +56,8 @@
         linear-gradient(
             90deg,
             rgba(0, 0, 0, 0.68),
-            rgba(0, 0, 0, 0.38),
-            rgba(0, 0, 0, 0.65)
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.85)
         );
 
     pointer-events: none;
@@ -74,11 +74,14 @@
 .languages-section {
     position: relative;
     z-index: 2;
-
     width: min(100%, var(--section-width));
     margin: 0 auto;
 }
-
+.blockAbout {
+    min-height: 100vh;
+    display: flex;
+     align-items: center;
+}
 
 .section-label,
 .section-heading,
@@ -320,7 +323,7 @@
    ========================================================= */
 
 .skills-section {
-    margin-bottom: 65px;
+    margin-bottom: 25px;
 }
 
 
@@ -346,8 +349,8 @@
     .skills-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 55px;
-        row-gap: 42px;
+        column-gap: 15px;
+        row-gap: 12px;
     }
 
     /*
@@ -409,7 +412,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 16px;
+    gap: 10px;
 }
 
 
@@ -737,7 +740,7 @@
 
     .skills-section {
         display: block;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
     }
 
 
@@ -827,7 +830,7 @@
        ========================= */
 
     .skills-section {
-        margin-bottom: 60px;
+        margin-bottom: 10px;
     }
 
 
