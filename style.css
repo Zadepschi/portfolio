@@ -1,5 +1,12 @@
 /* ========================================
-   GLOBAL RESET — HERO VIEWPORT
+   GOOGLE FONT
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ========================================
+   GLOBAL RESET
    ======================================== */
 
 html,
@@ -8,7 +15,13 @@ body {
     padding: 0;
     width: 100%;
     min-height: 100%;
+    font-family: 'Barlow', sans-serif;
 }
+
+
+/* ========================================
+   BOX SIZING
+   ======================================== */
 
 *,
 *::before,
@@ -16,6 +29,14 @@ body {
     box-sizing: border-box;
 }
 
+
+/* ========================================
+   GLOBAL VARIABLES
+   ======================================== */
+
+:root {
+    --font-main: 'Barlow', sans-serif;
+}
 /* ========================================
    HERO
 ======================================== */
@@ -517,7 +538,7 @@ body {
    SOCIAL LINKS
 ======================================== */
 
-.social-links {
+.social-linksHero {
     position: absolute;
 
     left: 5%;
@@ -532,7 +553,7 @@ body {
     z-index: 20;
 }
 
-.social-links a {
+.social-linksHero a {
     display: flex;
 
     width: 36px;
@@ -554,14 +575,14 @@ body {
         opacity 0.3s ease;
 }
 
-.social-links img {
+.social-linksHero img {
     width: 24px;
     height: 24px;
 
     object-fit: contain;
 }
 
-.social-links a:hover {
+.social-linksHero a:hover {
     transform: translateY(-4px);
 
     background: #fff;
@@ -573,53 +594,6 @@ body {
 }
 
 
-/* ========================================
-   SCROLL INDICATOR
-======================================== */
-
-.scroll-indicator {
-    position: absolute;
-
-    right: 5%;
-    bottom: 35px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    color: rgba(255, 255, 255, 0.55);
-
-    text-decoration: none;
-
-    z-index: 20;
-
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease;
-}
-
-.scroll-indicator span {
-    display: block;
-
-    width: 35px;
-    height: 1px;
-
-    background: #2fc7ff;
-}
-
-.scroll-indicator small {
-    font-size: 10px;
-
-    letter-spacing: 2px;
-}
-
-.scroll-indicator:hover {
-    color: #fff;
-
-    transform: translateX(-3px);
-}
 
 
 /* ========================================
@@ -1005,7 +979,7 @@ body {
 
     /* ---------- SOCIAL LINKS ---------- */
 
-     .social-links {
+     .social-linksHero {
         position: absolute;
 
         left: 50%;
@@ -1022,22 +996,16 @@ body {
         z-index: 30;
     }
 
-    .social-links a {
+    .social-linksHero a {
         width: 34px;
         height: 34px;
     }
 
-    .social-links img {
+    .social-linksHero img {
         width: 20px;
         height: 20px;
     }
 
-
-    /* ---------- SCROLL ---------- */
-
-    .scroll-indicator {
-        display: none;
-    }
 
 
     /* ---------- CURSOR ---------- */
@@ -1132,12 +1100,12 @@ body {
 
   
 
-    .social-links a {
+    .social-linksHero a {
         width: 31px;
         height: 31px;
     }
 
-    .social-links img {
+    .social-linksHero img {
         width: 18px;
         height: 18px;
     }
@@ -1207,5 +1175,92 @@ body {
         scroll-behavior: auto !important;
 
         transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* ========================================
+   SCROLL TO TOP
+   ======================================== */
+
+.scroll-to-top {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #2fc7ff;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.85);
+    color: #2fc7ff;
+
+    font-family: 'Barlow', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+
+    z-index: 9999;
+}
+
+
+/* Show button */
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* Hover */
+
+.scroll-to-top:hover {
+    background: #2fc7ff;
+    color: #000;
+
+    box-shadow:
+        0 0 10px rgba(47, 199, 255, 0.5),
+        0 0 25px rgba(47, 199, 255, 0.25);
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+    .scroll-to-top {
+        width: 44px;
+        height: 44px;
+
+        right: 18px;
+        bottom: 18px;
+
+        font-size: 23px;
     }
 }

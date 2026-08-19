@@ -64,6 +64,9 @@
     z-index: 0;
 }
 
+.skills-lang {
+    min-height: 100vh;
+}
 
 /* =========================================================
    COMMON
@@ -111,14 +114,17 @@
 .section-heading h2,
 .skill-group-title h3 {
     margin: 0;
-
+   
     color: var(--white);
 
-    font-family: inherit;
+
     font-weight: 700;
     letter-spacing: 2px;
 }
 
+.section-heading h2 {
+    margin-top: 20px;
+}
 
 .section-label h2 {
     font-size: 26px;
@@ -226,9 +232,6 @@
 }
 
 
-.about-text {
-    font-family: "Fira Mono", monospace;
-}
 
 
 .about-text p {
