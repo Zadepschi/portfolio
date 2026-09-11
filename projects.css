@@ -327,7 +327,7 @@
 
     border-radius: 5px;
 
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
 
     letter-spacing: 0.2px;
@@ -569,7 +569,7 @@
     }
 
     #projects .tech-badge {
-        font-size: 9px;
+        font-size: 12px;
         padding: 4px 8px;
     }
 
@@ -638,7 +638,7 @@
             4px
             8px;
 
-        font-size: 9px;
+        font-size: 12px;
     }
 
     #projects .textCart {
@@ -692,7 +692,7 @@
     }
 
     #projects .tech-badge {
-        font-size: 9px;
+        font-size: 11px;
     }
 }
 
@@ -736,8 +736,6 @@
         padding:
             3px
             7px;
-
-        font-size: 8px;
     }
 
     #projects .textCart {
