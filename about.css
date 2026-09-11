@@ -1022,10 +1022,7 @@
     #about {
         min-height: auto;
 
-        padding:
-            70px
-            25px
-            100px;
+         padding: 10px;
 
         background-attachment: scroll;
     }
@@ -1127,10 +1124,7 @@
 @media screen and (max-width: 700px) {
 
     #about {
-        padding:
-            70px
-            16px
-            80px;
+        padding: 10px;
     }
 
 
